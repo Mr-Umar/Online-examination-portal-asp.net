@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome</title>
+   <!--Myrules-->
+    <link href="MY_Rules/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="MY_Rules/css/Custom.css" rel="stylesheet"/>
+    <script src="MY_Rules/Script/bootstrap.min.js"></script>
+    <script src="MY_Rules/Script/jquery.min.js"></script>
+    <!--Myrules-->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Custom-Cs -->
+    <link href="css/Custom.css" rel="stylesheet"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .auto-style1 {
+            border-style: none;
+            border-color: inherit;
+            border-width: 0;
+            position: absolute;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!--nvigation -->
+          <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="auto-style1">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Default.aspx"><span>
+                            <img alt="logo" src="images/logo.png" height="40" /></span>EXAMINO.com</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="Default.aspx">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">Profile</li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">bbb</a></li>
+                                    <li><a href="#">ccc</a></li>
+                                    <li><a href="#">ddd</a></li>
+                                    <li class="dropdown-header">Profile2</li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">bbb</a></li>
+                                    <li><a href="#">ccc</a></li>
+                                    <li><a href="#">ddd</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="#">Manage</a></li>
+                            <li>
+                                <asp:Button ID="BtAdminLogout" runat="server" Class="btn btn-default navbar-btn" Text="Logout" OnClick="BtAdminLogout_click" />
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <!--nvigation end-->
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               <%-- <div class="container-fluid">
+                    <br />
+                    <h1>Welcome To Admin Panel</h1>
+                    <br />
+                    <div class="row content">
+
+                        <div class="col-sm-3 sidenav hidden-xs">
+
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="active"><a href="Dashboard.aspx">Dashboard</a></li>
+                                <li><a href="UserEntry.aspx">User Entry</a></li>
+                                <li><a href="ManageUsers.aspx">Manage Users</a></li>
+                                <li><a href="SubjectEntry.aspx">Subject Entry</a></li>
+                                <li><a href="QuestionsEntry.aspx">Questions Entry</a></li>
+                                <li><a href="ViewQuestion.aspx">View Questions</a></li>
+                                <li><a href="ViewResults.aspx">View Results</a></li>
+                                <li><a href="ExamEntry.aspx">Exam Entry</a></li>
+                            </ul>
+                            <br />
+                        </div>
+                    </div>
+                </div>--%>
+            </asp:ContentPlaceHolder>
+        </div>
+        </div>
+    </form>
+     <!--- Footer Contents --------------------->
+        <hr />
+         <footer>
+        <div class="container">
+            <p class="pull-right"> <a href="#">Back to Top</a></p>
+           <p>&copy; 2017 Examino.com &middot;<a href="Default.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="#">Setting</a></p>
+        </div>
+             </footer>
+        <!--- Footer Contents --------------------->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
